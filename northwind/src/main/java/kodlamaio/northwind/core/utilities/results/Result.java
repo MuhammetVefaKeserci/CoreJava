@@ -1,24 +1,24 @@
-package kodlamaio.northwind.core.utilities.results;
+package vefaProject.MyVefaProject.core.utilities.results;
 
-public class Result { //super type olarak geçer bu result
-    private boolean success; // DEĞİŞKENLER
-    private String message;  // DEĞİŞKENLER
+public class Result { 
+    private boolean success; 
+    private String message;  
 
-    public Result(boolean success){ //CONSTRUCTOR
+    public Result(boolean success){ 
         this.success = success;
                                   }
 
-    public Result(boolean success,String message){ //CONSTRUCTOR == Obje oluşturulurken değer verilmesidir
+    public Result(boolean success,String message){
         this(success);
         this.message = message;
     }
 
 
-     public boolean isSuccess()  { //GETTER
+     public boolean isSuccess()  {
         return this.success;
      }
 
-     public String getMessage(){ //GETTER
+     public String getMessage(){ 
         return this.message;
      }
 }
